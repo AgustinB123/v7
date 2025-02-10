@@ -1,0 +1,48 @@
+{
+  "titulo": "Posiciones de Acciones de Terceros",
+  "imagen": null,
+  "datos_generales": {
+    "fecha": "10/02/2025",
+    "cliente": 810166,
+    "carteras": ["AFS", "AFSB", "BOOKCC", "BOOKPPL", "BOOKTI"],
+    "especies": 4507,
+    "contra_especie": 4507
+  },
+  "cabeceras": [
+    "Fecha",
+    "Fecha Vto",
+    "Moneda",
+    "Cantidad",
+    "Precio",
+    "Nr Operacion",
+    "Tipo",
+    "Cartera"
+  ],
+  "valores": [
+    {
+      "fecha": "10/02/2025",
+      "fecha_vto": "15/02/2025",
+      "moneda": "USD",
+      "cantidad": 100,
+      "precio": 150.75,
+      "nr_operacion": 123456,
+      "tipo": "Compra",
+      "cartera": "AFS"
+    },
+    {
+      "fecha": "10/02/2025",
+      "fecha_vto": "20/02/2025",
+      "moneda": "EUR",
+      "cantidad": 50,
+      "precio": 120.50,
+      "nr_operacion": 654321,
+      "tipo": "Venta",
+      "cartera": "BOOKPPL"
+    }
+  ],
+  "total": {
+    "cantidad": 150.00,
+    "precio": 27125.00
+  },
+  "fin_informe": true
+}

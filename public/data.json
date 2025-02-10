@@ -1,150 +1,150 @@
 {
   "items": [
     {
-      "label": "Archivo",
+      "label1": "Archivo",
       "dropdownItems": [
-        { "label": "Label 1" },
-        { "label": "Label 2" },
-        { "label": "Label 3" },
-        { "label": "Label 4" },
-        { "label": "Label 5" }
+        { "label2": "Label 1" },
+        { "label2": "Label 2" },
+        { "label2": "Label 3" },
+        { "label2": "Label 4" },
+        { "label2": "Label 5" }
       ]
     },
     {
-      "label": "Operacion",
+      "label1": "Operacion",
       "dropdownItems": [
-        { "label": "Label 1" },
-        { "label": "Label 2" },
-        { "label": "Label 3" },
-        { "label": "Label 4" },
-        { "label": "Label 5" }
+        { "label2": "Label 1" },
+        { "label2": "Label 2" },
+        { "label2": "Label 3" },
+        { "label2": "Label 4" },
+        { "label2": "Label 5" }
       ]
     },
     {
-      "label": "Transacciones",
+      "label1": "Transacciones",
       "dropdownItems": [
-        { "label": "Label 1" },
-        { "label": "Label 2" },
-        { "label": "Label 3" },
-        { "label": "Label 4" },
-        { "label": "Label 5" }
+        { "label2": "Label 1" },
+        { "label2": "Label 2" },
+        { "label2": "Label 3" },
+        { "label2": "Label 4" },
+        { "label2": "Label 5" }
       ]
     },
     {
-      "label": "Ordenes",
+      "label1": "Ordenes",
       "dropdownItems": [
-        { "label": "Label 1" },
-        { "label": "Label 2" },
-        { "label": "Label 3" },
-        { "label": "Label 4" },
-        { "label": "Label 5" }
+        { "label2": "Label 1" },
+        { "label2": "Label 2" },
+        { "label2": "Label 3" },
+        { "label2": "Label 4" },
+        { "label2": "Label 5" }
       ]
     },
     {
-      "label": "Op.Minoristas",
+      "label1": "Op.Minoristas",
       "dropdownItems": [
-        { "label": "Label 1" },
-        { "label": "Label 2" },
-        { "label": "Label 3" },
-        { "label": "Label 4" },
-        { "label": "Label 5" }
+        { "label2": "Label 1" },
+        { "label2": "Label 2" },
+        { "label2": "Label 3" },
+        { "label2": "Label 4" },
+        { "label2": "Label 5" }
       ]
     },
     {
-      "label": "Minutas Bolsa",
+      "label1": "Minutas Bolsa",
       "dropdownItems": [
-        { "label": "Label 1" },
-        { "label": "Label 2" },
-        { "label": "Label 3" },
-        { "label": "Label 4" },
-        { "label": "Label 5" }
+        { "label2": "Label 1" },
+        { "label2": "Label 2" },
+        { "label2": "Label 3" },
+        { "label2": "Label 4" },
+        { "label2": "Label 5" }
       ]
     },
     {
-      "label": "Informes",
+      "label1": "Informes",
       "dropdownItems": [
-        { "label": "Prueba" },
-        { "label": "Otra Prueba" },
+        { "label2": "Prueba", "href": "/informes" },
+        { "label2": "Otra Prueba" },
         {
-          "label": "Acciones",
+          "label2": "Acciones",
           "dropdownItems": [
-            { "label": "Valor 1" },
-            { "label": "Valor 2" },
-            { "label": "Valor 3" },
-            { "label": "Valor 4" },
-            { "label": "Valor 5" },
-            { "label": "Valor 6" },
-            { "label": "Valor 7" },
-            { "label": "Valor 8" },
-            { "label": "Valor 9" },
-            { "label": "Valor 10" }
+            { "label3": "Valor 1" },
+            { "label3": "Valor 2" },
+            { "label3": "Valor 3" },
+            { "label3": "Valor 4" },
+            { "label3": "Valor 5" },
+            { "label3": "Valor 6" },
+            { "label3": "Valor 7" },
+            { "label3": "Valor 8" },
+            { "label3": "Valor 9" },
+            { "label3": "Valor 10" }
           ]
         },
         {
-          "label": "Archivos",
+          "label2": "Archivos",
           "dropdownItems": [
-            { "label": "Valor 1" },
-            { "label": "Valor 2" },
-            { "label": "Valor 3" },
-            { "label": "Valor 4" },
-            { "label": "Valor 5" },
-            { "label": "Valor 6" },
-            { "label": "Valor 7" },
-            { "label": "Valor 8" },
-            { "label": "Valor 9" },
-            { "label": "Valor 10" }
+            { "label3": "Valor 1" },
+            { "label3": "Valor 2" },
+            { "label3": "Valor 3" },
+            { "label3": "Valor 4" },
+            { "label3": "Valor 5" },
+            { "label3": "Valor 6" },
+            { "label3": "Valor 7" },
+            { "label3": "Valor 8" },
+            { "label3": "Valor 9" },
+            { "label3": "Valor 10" }
           ]
         }
       ]
     },
     {
-      "label": "Eventos",
+      "label1": "Eventos",
       "dropdownItems": [
-        { "label": "Label 1" },
-        { "label": "Label 2" },
-        { "label": "Label 3" },
-        { "label": "Label 4" },
-        { "label": "Label 5" }
+        { "label2": "Label 1" },
+        { "label2": "Label 2" },
+        { "label2": "Label 3" },
+        { "label2": "Label 4" },
+        { "label2": "Label 5" }
       ]
     },
     {
-      "label": "Utilitarios",
+      "label1": "Utilitarios",
       "dropdownItems": [
-        { "label": "Label 1" },
-        { "label": "Label 2" },
-        { "label": "Label 3" },
-        { "label": "Label 4" },
-        { "label": "Label 5" }
+        { "label2": "Label 1" },
+        { "label2": "Label 2" },
+        { "label2": "Label 3" },
+        { "label2": "Label 4" },
+        { "label2": "Label 5" }
       ]
     },
     {
-      "label": "Herramientas",
+      "label1": "Herramientas",
       "dropdownItems": [
-        { "label": "Label 1" },
-        { "label": "Label 2" },
-        { "label": "Label 3" },
-        { "label": "Label 4" },
-        { "label": "Label 5" }
+        { "label2": "Label 1" },
+        { "label2": "Label 2" },
+        { "label2": "Label 3" },
+        { "label2": "Label 4" },
+        { "label2": "Label 5" }
       ]
     },
     {
-      "label": "Ventanas",
+      "label1": "Ventanas",
       "dropdownItems": [
-        { "label": "Label 1" },
-        { "label": "Label 2" },
-        { "label": "Label 3" },
-        { "label": "Label 4" },
-        { "label": "Label 5" }
+        { "label2": "Label 1" },
+        { "label2": "Label 2" },
+        { "label2": "Label 3" },
+        { "label2": "Label 4" },
+        { "label2": "Label 5" }
       ]
     },
     {
-      "label": "Ayuda",
+      "label1": "Ayuda",
       "dropdownItems": [
-        { "label": "Label 1" },
-        { "label": "Label 2" },
-        { "label": "Label 3" },
-        { "label": "Label 4" },
-        { "label": "Label 5" }
+        { "label2": "Label 1" },
+        { "label2": "Label 2" },
+        { "label2": "Label 3" },
+        { "label2": "Label 4" },
+        { "label2": "Label 5" }
       ]
     }
   ]

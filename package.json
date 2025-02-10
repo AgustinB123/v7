@@ -9,8 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@handsontable/react": "^15.0.1",
     "bootstrap": "^5.3.3",
-    "handsontable": "^15.0.0",
+    "handsontable": "^15.0.1",
     "next": "15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
