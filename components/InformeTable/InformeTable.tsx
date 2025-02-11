@@ -10,27 +10,23 @@ interface InformeTableProps {
   datosGenerales: any;
 }
 
+const normalizeHeader = (header: string) => {
+  return header.replace(/\s+/g, "").toLowerCase();
+};
+
 const InformeTable: React.FC<InformeTableProps> = ({
   data,
   titulo,
   imagen,
   datosGenerales,
 }) => {
-  const { cabeceras, valores, total } = data;
+  const { cabeceras, valores } = data;
 
-  const tableData = [
-    ...valores.map((valor: any) => [
-      valor.fecha,
-      valor.fecha_vto,
-      valor.moneda,
-      valor.cantidad,
-      valor.precio,
-      valor.nr_operacion,
-      valor.tipo,
-      valor.cartera,
-    ]),
-    ["Total", "", "", total.cantidad, total.precio, "", "", ""],
-  ];
+  const tableData = valores.map((valor: any) =>
+    cabeceras.map(
+      (cabecera: any) => valor[normalizeHeader(cabecera.nombre)] || ""
+    )
+  );
 
   const colHeaders = cabeceras.map((cabecera: any) => cabecera.nombre);
   const colWidths = cabeceras.map((cabecera: any) => cabecera.ancho || 100);
@@ -64,8 +60,6 @@ const InformeTable: React.FC<InformeTableProps> = ({
         rowHeaders={true}
         width="100%"
         height="auto"
-        stretchH="all"
-        manualColumnResize={true}
         licenseKey="non-commercial-and-evaluation"
       />
     </div>

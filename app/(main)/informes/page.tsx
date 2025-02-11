@@ -11,6 +11,7 @@ const InformesPage = () => {
 
   useEffect(() => {
     if (title) {
+      setContent(null); // Limpiar el estado actual
       fetch(`/api/getFileContent?fileName=${title}`)
         .then((response) => response.json())
         .then((data) => {

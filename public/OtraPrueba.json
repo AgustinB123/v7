@@ -1,6 +1,101 @@
 {
-    "nombre": "Agustín",
-    "edad": 25,
-    "email": "agustin@example.com",
-    "activo": true
-  }
+  "titulo": "Informe de Acciones de Clientes",
+  "imagen": "/FPAsoftware.png",
+  "datos_generales": {
+    "fecha": "11/02/2025",
+    "cliente": 810166,
+    "carteras": ["AFS", "AFSB", "BOOKCC", "BOOKPPL", "BOOKTI"],
+    "especies": 4507,
+    "contra_especie": 4507
+  },
+  "cabeceras": [
+    { "nombre": "Fecha", "ancho": 100 },
+    { "nombre": "Fecha Vto", "ancho": 100 },
+    { "nombre": "Moneda", "ancho": 80 },
+    { "nombre": "Cantidad", "ancho": 100 },
+    { "nombre": "Precio", "ancho": 100 },
+    { "nombre": "Nr Operacion", "ancho": 120 },
+    { "nombre": "Tipo", "ancho": 80 },
+    { "nombre": "Cartera", "ancho": 100 },
+    { "nombre": "Cliente", "ancho": 100 },
+    { "nombre": "Especie", "ancho": 100 }
+  ],
+  "valores": [
+    {
+      "fecha": "10/02/2025",
+      "fechavto": "20/02/2025",
+      "moneda": "USD",
+      "cantidad": 100,
+      "precio": 150.50,
+      "nroperacion": 123456,
+      "tipo": "Compra",
+      "cartera": "AFS",
+      "cliente": "Cliente1",
+      "especie": "Especie1"
+    },
+    {
+      "fecha": "11/02/2025",
+      "fechavto": "21/02/2025",
+      "moneda": "EUR",
+      "cantidad": 200,
+      "precio": 250.75,
+      "nroperacion": 654321,
+      "tipo": "Venta",
+      "cartera": "AFSB",
+      "cliente": "Cliente2",
+      "especie": "Especie2"
+    },
+    {
+      "fecha": "12/02/2025",
+      "fechavto": "22/02/2025",
+      "moneda": "USD",
+      "cantidad": 150,
+      "precio": 175.25,
+      "nroperacion": 789123,
+      "tipo": "Compra",
+      "cartera": "BOOKCC",
+      "cliente": "Cliente1",
+      "especie": "Especie1"
+    },
+    {
+      "fecha": "13/02/2025",
+      "fechavto": "23/02/2025",
+      "moneda": "EUR",
+      "cantidad": 250,
+      "precio": 275.50,
+      "nroperacion": 321987,
+      "tipo": "Venta",
+      "cartera": "BOOKPPL",
+      "cliente": "Cliente2",
+      "especie": "Especie2"
+    },
+    {
+      "fecha": "14/02/2025",
+      "fechavto": "24/02/2025",
+      "moneda": "USD",
+      "cantidad": 300,
+      "precio": 350.00,
+      "nroperacion": 456789,
+      "tipo": "Compra",
+      "cartera": "BOOKTI",
+      "cliente": "Cliente1",
+      "especie": "Especie1"
+    },
+    {
+      "fecha": "15/02/2025",
+      "fechavto": "25/02/2025",
+      "moneda": "EUR",
+      "cantidad": 400,
+      "precio": 450.75,
+      "nroperacion": 987654,
+      "tipo": "Venta",
+      "cartera": "AFS",
+      "cliente": "Cliente2",
+      "especie": "Especie2"
+    }
+  ],
+  "total": {
+    "precio": 271250.00
+  },
+  "fin_informe": true
+}

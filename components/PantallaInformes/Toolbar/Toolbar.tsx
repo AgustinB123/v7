@@ -1,11 +1,45 @@
-import { Button } from "@/components/ui/button"; // Puedes usar shadcn/ui para estilizar
+import React from "react";
 
-const Toolbar = () => {
+interface ToolbarProps {
+  codigoValido: boolean;
+  handleAccept: () => void;
+  handleReject: () => void;
+  handlePrint: () => void;
+}
+
+const Toolbar: React.FC<ToolbarProps> = ({
+  codigoValido,
+  handleAccept,
+  handleReject,
+  handlePrint,
+}) => {
+  const onAccept = () => {
+    if (codigoValido) {
+      handleAccept();
+    } else {
+      alert("Código no válido. No se puede aceptar.");
+    }
+  };
+
+  const onPrint = () => {
+    if (codigoValido) {
+      handlePrint();
+    } else {
+      alert("Código no válido. No se puede imprimir.");
+    }
+  };
+
   return (
-    <div className="flex gap-2 mb-4">
-      <Button className="bg-green-500 hover:bg-green-600">✔ Confirmar</Button>
-      <Button className="bg-red-500 hover:bg-red-600">❌ Cancelar</Button>
-      <Button className="bg-blue-500 hover:bg-blue-600">🖨️ Imprimir</Button>
+    <div className="d-flex gap-2 mb-4">
+      <button className="btn btn-success" onClick={onAccept}>
+        ✔ Aceptar
+      </button>
+      <button className="btn btn-danger" onClick={handleReject}>
+        ❌ Rechazar
+      </button>
+      <button className="btn btn-primary" onClick={onPrint}>
+        🖨️ Imprimir
+      </button>
     </div>
   );
 };
