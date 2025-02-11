@@ -2,7 +2,7 @@
 
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import InformeTable from "../../../components/InformeTable/InformeTable";
+import Pantalla from "../../../components/PantallaInformes/Pantalla";
 
 const InformesPage = () => {
   const searchParams = useSearchParams();
@@ -34,29 +34,7 @@ const InformesPage = () => {
         content.error ? (
           <p>{content.error}</p>
         ) : (
-          <div>
-            {content.imagen && (
-              <div style={{ display: "flex", alignItems: "center" }}>
-                <img
-                  src={content.imagen}
-                  alt="Informe Imagen"
-                  style={{ maxWidth: "200px", marginRight: "20px" }}
-                />
-                <h2>{content.titulo}</h2>
-              </div>
-            )}
-            {!content.imagen && <h2>{content.titulo}</h2>}
-            <div>
-              <ul>
-                {Object.entries(content.datos_generales).map(([key, value]) => (
-                  <li key={key}>
-                    <strong>{key}:</strong> {value}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <InformeTable data={content} />
-          </div>
+          <Pantalla data={content} />
         )
       ) : (
         <p>Cargando...</p>

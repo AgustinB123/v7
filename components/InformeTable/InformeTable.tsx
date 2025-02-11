@@ -5,9 +5,17 @@ import "handsontable/dist/handsontable.full.css";
 
 interface InformeTableProps {
   data: any;
+  titulo: string;
+  imagen: string;
+  datosGenerales: any;
 }
 
-const InformeTable: React.FC<InformeTableProps> = ({ data }) => {
+const InformeTable: React.FC<InformeTableProps> = ({
+  data,
+  titulo,
+  imagen,
+  datosGenerales,
+}) => {
   const { cabeceras, valores, total } = data;
 
   const tableData = [
@@ -28,17 +36,39 @@ const InformeTable: React.FC<InformeTableProps> = ({ data }) => {
   const colWidths = cabeceras.map((cabecera: any) => cabecera.ancho || 100);
 
   return (
-    <HotTable
-      data={tableData}
-      colHeaders={colHeaders}
-      colWidths={colWidths}
-      rowHeaders={true}
-      width="100%"
-      height="auto"
-      stretchH="all"
-      manualColumnResize={true}
-      licenseKey="non-commercial-and-evaluation"
-    />
+    <div>
+      <div
+        style={{ display: "flex", alignItems: "center", marginBottom: "20px" }}
+      >
+        <img
+          src={imagen}
+          alt="Informe Imagen"
+          style={{ maxWidth: "200px", marginRight: "20px" }}
+        />
+        <h2>{titulo}</h2>
+      </div>
+      <div>
+        <h3>Datos Generales</h3>
+        <ul>
+          {Object.entries(datosGenerales).map(([key, value]) => (
+            <li key={key}>
+              <strong>{key}:</strong> {value}
+            </li>
+          ))}
+        </ul>
+      </div>
+      <HotTable
+        data={tableData}
+        colHeaders={colHeaders}
+        colWidths={colWidths}
+        rowHeaders={true}
+        width="100%"
+        height="auto"
+        stretchH="all"
+        manualColumnResize={true}
+        licenseKey="non-commercial-and-evaluation"
+      />
+    </div>
   );
 };
 
