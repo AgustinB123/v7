@@ -1,6 +1,6 @@
 {
   "titulo": "Posiciones de Acciones de Terceros",
-  "imagen": null,
+  "imagen": "/logoFPA.png",
   "datos_generales": {
     "fecha": "10/02/2025",
     "cliente": 810166,
@@ -9,14 +9,14 @@
     "contra_especie": 4507
   },
   "cabeceras": [
-    "Fecha",
-    "Fecha Vto",
-    "Moneda",
-    "Cantidad",
-    "Precio",
-    "Nr Operacion",
-    "Tipo",
-    "Cartera"
+    { "nombre": "Fecha", "ancho": 100 },
+    { "nombre": "Fecha Vto", "ancho": 100 },
+    { "nombre": "Moneda", "ancho": 80 },
+    { "nombre": "Cantidad", "ancho": 100 },
+    { "nombre": "Precio", "ancho": 100 },
+    { "nombre": "Nr Operacion", "ancho": 120 },
+    { "nombre": "Tipo", "ancho": 80 },
+    { "nombre": "Cartera", "ancho": 100 }
   ],
   "valores": [
     {
@@ -38,11 +38,111 @@
       "nr_operacion": 654321,
       "tipo": "Venta",
       "cartera": "BOOKPPL"
+    },
+    {
+      "fecha": "11/02/2025",
+      "fecha_vto": "21/02/2025",
+      "moneda": "USD",
+      "cantidad": 200,
+      "precio": 300.50,
+      "nr_operacion": 789012,
+      "tipo": "Compra",
+      "cartera": "AFSB"
+    },
+    {
+      "fecha": "12/02/2025",
+      "fecha_vto": "22/02/2025",
+      "moneda": "EUR",
+      "cantidad": 75,
+      "precio": 90.25,
+      "nr_operacion": 345678,
+      "tipo": "Venta",
+      "cartera": "BOOKCC"
+    },
+    {
+      "fecha": "13/02/2025",
+      "fecha_vto": "23/02/2025",
+      "moneda": "USD",
+      "cantidad": 150,
+      "precio": 200.00,
+      "nr_operacion": 901234,
+      "tipo": "Compra",
+      "cartera": "BOOKTI"
+    },
+    {
+      "fecha": "14/02/2025",
+      "fecha_vto": "24/02/2025",
+      "moneda": "EUR",
+      "cantidad": 60,
+      "precio": 110.75,
+      "nr_operacion": 567890,
+      "tipo": "Venta",
+      "cartera": "AFS"
+    },
+    {
+      "fecha": "15/02/2025",
+      "fecha_vto": "25/02/2025",
+      "moneda": "USD",
+      "cantidad": 80,
+      "precio": 130.50,
+      "nr_operacion": 123789,
+      "tipo": "Compra",
+      "cartera": "AFSB"
+    },
+    {
+      "fecha": "16/02/2025",
+      "fecha_vto": "26/02/2025",
+      "moneda": "EUR",
+      "cantidad": 40,
+      "precio": 70.25,
+      "nr_operacion": 456123,
+      "tipo": "Venta",
+      "cartera": "BOOKCC"
+    },
+    {
+      "fecha": "17/02/2025",
+      "fecha_vto": "27/02/2025",
+      "moneda": "USD",
+      "cantidad": 90,
+      "precio": 160.00,
+      "nr_operacion": 789456,
+      "tipo": "Compra",
+      "cartera": "BOOKTI"
+    },
+    {
+      "fecha": "18/02/2025",
+      "fecha_vto": "28/02/2025",
+      "moneda": "EUR",
+      "cantidad": 55,
+      "precio": 100.75,
+      "nr_operacion": 123654,
+      "tipo": "Venta",
+      "cartera": "AFS"
+    },
+    {
+      "fecha": "19/02/2025",
+      "fecha_vto": "01/03/2025",
+      "moneda": "USD",
+      "cantidad": 110,
+      "precio": 180.50,
+      "nr_operacion": 456789,
+      "tipo": "Compra",
+      "cartera": "AFSB"
+    },
+    {
+      "fecha": "20/02/2025",
+      "fecha_vto": "02/03/2025",
+      "moneda": "EUR",
+      "cantidad": 65,
+      "precio": 140.25,
+      "nr_operacion": 789123,
+      "tipo": "Venta",
+      "cartera": "BOOKCC"
     }
   ],
   "total": {
-    "cantidad": 150.00,
-    "precio": 27125.00
+    "cantidad": 1500.00,
+    "precio": 271250.00
   },
   "fin_informe": true
 }
